@@ -44,7 +44,7 @@ nav {
     }
 }
 
-@media screen and (orientation: portrait) and (max-width: 700px) {
+@media screen and (max-width: 700px) {
     nav {
         position: relative;
     }
@@ -90,10 +90,6 @@ nav {
     /* Transitioning each of the links */
     .nav-links .link {
         opacity: 0;
-    }
-
-    .nav-links .link a {
-        font-size: 2rem;
     }
 
     .nav-links .link:nth-child(1) {
