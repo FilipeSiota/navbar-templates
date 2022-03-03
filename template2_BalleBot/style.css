@@ -1,0 +1,179 @@
+/*=====================================
+# MAIN CONFIG
+=====================================*/
+
+:root {
+    --text-primary-color: #FFF2E7;
+    --text-secondary-color: #ECD6C4;
+    --text-alternative-color: #2F2325;
+}
+
+* {
+    font-size: 62.5%;
+    font-family: 'Sarala', sans-serif;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    outline: 0;
+    text-decoration: none;
+}
+
+html, body {
+    min-height: 100vh;
+    height: 100%;
+    min-width: 320px;
+    width: 100%;
+}
+
+body {
+    background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    max-width: 980px;
+    width: 95%;
+}
+
+/*=====================================
+# HEADER
+=====================================*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+    padding: 10px 0;
+}
+
+header img {
+    width: 62px;
+    height: auto;
+}
+
+.menu {
+    list-style: none;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu-item a {
+    font-size: 1.4rem;
+    color: var(--text-primary-color);
+    border-bottom: 0.4px solid transparent;
+
+    transition: all 0.2s linear;
+}
+
+.menu-item a:hover {
+    border-bottom-color: var(--text-primary-color);
+}
+
+/*=====================================
+# MAIN CONTENT 1
+=====================================*/
+
+.primary-content {
+    border-top: 0.4px solid var(--text-primary-color);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.primary-content img {
+    width: 400px;
+    height: auto;
+}
+
+.primary-content-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.primary-content-text h1 {
+    font-family: 'Righteous', cursive;
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 1;
+    color: var(--text-primary-color);
+}
+
+.primary-content-text h2 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--text-secondary-color);
+}
+
+.primary-content-text .primary-btn {
+    background-color: var(--text-secondary-color);
+    padding: 10px 20px;
+    border-radius: 10px;
+
+    text-align: center;
+    font-size: 1.4rem;
+    color: var(--text-alternative-color);
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.primary-content-text .primary-btn:hover {
+    opacity: 0.9;
+}
+
+/*=====================================
+# MAIN CONTENT 2
+=====================================*/
+
+.secondary-content {
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.secondary-content h3 {
+    padding-top: 50px;
+    border-top: 0.4px solid var(--text-primary-color);
+    
+    font-family: 'Righteous', cursive;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--text-primary-color);
+}
+
+.secondary-content .features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.secondary-content .features li {
+    font-size: 1.2rem;
+    color: var(--text-secondary-color);
+}
+
+.secondary-content .features strong {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
