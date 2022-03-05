@@ -28,7 +28,9 @@ html, body {
 }
 
 body {
-    background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+    background-color: #8E5D52;
+    background-image: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+    background-attachment: fixed;
 
     display: flex;
     flex-direction: column;
@@ -40,18 +42,29 @@ body {
     width: 95%;
 }
 
+strong {
+    font-size: inherit;
+}
+
 /*=====================================
 # HEADER
 =====================================*/
 
 header {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+header > div {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     gap: 30px;
 
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
 header img {
@@ -65,11 +78,11 @@ header img {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 30px;
+    gap: 40px;
 }
 
 .menu-item a {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: var(--text-primary-color);
     border-bottom: 0.4px solid transparent;
 
@@ -84,8 +97,17 @@ header img {
 # MAIN CONTENT 1
 =====================================*/
 
-.primary-content {
+main {
     border-top: 0.4px solid var(--text-primary-color);
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.primary-content {
+    width: 100%;
 
     display: flex;
     flex-direction: row;
@@ -108,14 +130,14 @@ header img {
 
 .primary-content-text h1 {
     font-family: 'Righteous', cursive;
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 400;
     line-height: 1;
     color: var(--text-primary-color);
 }
 
 .primary-content-text h2 {
-    font-size: 1.4rem;
+    font-size: 2rem;
     font-weight: 400;
     color: var(--text-secondary-color);
 }
@@ -126,7 +148,7 @@ header img {
     border-radius: 10px;
 
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     color: var(--text-alternative-color);
     box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
 
@@ -135,7 +157,7 @@ header img {
 }
 
 .primary-content-text .primary-btn:hover {
-    opacity: 0.9;
+    opacity: 0.7;
 }
 
 /*=====================================
@@ -156,7 +178,7 @@ header img {
     border-top: 0.4px solid var(--text-primary-color);
     
     font-family: 'Righteous', cursive;
-    font-size: 1.4rem;
+    font-size: 2.4rem;
     font-weight: 400;
     color: var(--text-primary-color);
 }
@@ -169,11 +191,27 @@ header img {
 }
 
 .secondary-content .features li {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     color: var(--text-secondary-color);
 }
 
-.secondary-content .features strong {
-    font-size: 1.2rem;
-    font-weight: 700;
+/*=====================================
+# FOOTER
+=====================================*/
+
+footer {
+    margin-top: 50px;
+    border-top: 0.4px solid var(--text-primary-color);
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer > div {
+    display: flex;
+    justify-content: center;
+
+    padding: 40px 0;
 }
