@@ -5,8 +5,6 @@ const $nav = $('nav');
 const $menuIcon = $('#menu-icon');
 const $iconLine = $('.line');
 
-$iconLine.addClass('switch-icon'); // switch the X icon to the HAMBURGUER icon
-
 $menuIcon.on('click', function() {
 
     $nav.slideToggle(400); // slide the dropdown menu
