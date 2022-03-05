@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <title>NavBar Templates | Menu</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-background: #051367;
+            --secondary-background: #5D8BF4;
+            --primary-button: #DFF6FF;
+            --text-color: #2D31FA;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+        }
+
+        html, body {
+            min-height: 100vh;
+            height: 100%;
+            min-width: 350px;
+            width: 100vw;
+
+            scroll-behavior: smooth;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            background-image: linear-gradient(45deg, var(--primary-background), var(--secondary-background));
+            background-attachment: fixed;
+        }
+
+        main, footer {
+            max-width: 400px;
+            width: 90%;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            gap: 10px;
+        }
+
+        main > h1 {
+            color: var(--primary-button);
+            text-align: center;
+            border-bottom: 0.4px solid var(--secondary-background);
+            font-size: 2em;
+        }
+
+        .btn {
+            background-color: var(--primary-button);
+            display: block;
+
+            padding: 15px 20px;
+            border-radius: 10px;
+            font-size: 1.2em;
+            color: var(--text-color);
+            text-align: center;
+            font-weight: 600;
+
+            transition: all 0.2s ease-in-out;
+        }
+
+        .btn:hover {
+            box-shadow: 0px 0px 10px var(--primary-background);
+            background-color: var(--text-color);
+            color: var(--primary-button);
+        }
+
+        footer {
+            margin-top: 10px;
+        }
+
+        footer p {
+            color: var(--primary-button);
+            font-size: 1em;
+            text-align: center;
+        }
+
+        footer a {
+            color: inherit;
+            font-size: inherit;
+            font-weight: 600;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>NavBar Templates</h1>
+
+        <a href="./template1_Bubble_Effect/" class="btn">Template 1 - Bubble Effect</a>
+        <a href="./template2_BalleBot/" class="btn">Template 2 - Balle Bot</a>
+    </main>
+
+    <footer>
+        <p>Icons made by <a href="https://www.flaticon.com/authors/edtim" title="edt.im">edt.im</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+    </footer>
+</body>
+</html>
