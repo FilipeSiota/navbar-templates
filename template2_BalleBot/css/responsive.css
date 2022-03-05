@@ -1,0 +1,117 @@
+@media screen and (max-width: 980px) {
+    * {
+        font-size: 60%;
+    }
+
+    body.scroll-hidden {
+        overflow: hidden;
+    }
+
+    /*=====================================
+    # HEADER
+    =====================================*/
+
+    #menu-icon {
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        width: 30px;
+        cursor: pointer;
+
+        z-index: 2;
+    }
+
+    /* Icon X (close) layout */
+    #menu-icon .line {
+        background-color: var(--text-alternative-color);
+        width: 100%;
+        height: 3px;
+        border-radius: 10px;
+
+        position: absolute;
+
+        transition: all 0.4s ease;
+    }
+
+    #menu-icon .line:nth-child(1) {
+        transform: rotate(45deg);
+    }
+
+    #menu-icon .line:nth-child(2) {
+        display: none;
+    }
+
+    #menu-icon .line:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+
+    /* Icon HAMBURGUER (open) layout */
+    #menu-icon .line.switch-icon {
+        background-color: var(--text-primary-color);
+        display: block;
+        
+        position: relative;
+        transform: rotate(0deg);
+    }
+
+    nav {
+        background-color: var(--text-primary-color);
+        display: none;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        height: 100vh;
+        width: 100vw;
+
+        z-index: 1;
+    }
+
+    #menu {
+        height: 100%;
+        width: 100%;
+
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .menu-item a {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: var(--text-alternative-color);
+    }
+
+    .menu-item a:hover {
+        border-bottom-color: var(--text-alternative-color);
+    }
+
+    /*=====================================
+    # MAIN CONTENT 1
+    =====================================*/
+
+    .primary-content {
+        flex-direction: column;
+        justify-content: center;
+
+        margin-top: 50px;
+    }
+
+    .primary-content-text {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .primary-content-text h1 {
+        font-size: 4.2rem;
+    }
+
+    .primary-content-text h2 {
+        text-align: center;
+    }
+}
